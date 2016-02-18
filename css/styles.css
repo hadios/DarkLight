@@ -1,0 +1,110 @@
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.main-page {
+  background: black;
+  color: white;
+
+  text-align: center;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting {
+  background: white;
+  color: black;
+
+  text-align: center;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faction {
+  height: 100vh;
+}
+
+.yami-page {
+  z-index: -3;
+  background: black;
+  color: white;
+
+  height: 100vh;
+}
+
+.yami {
+  background: black;
+  color: white;
+
+  height: 100vh;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hikari-page {
+  background: white;
+  color: black;
+
+  height: 100vh;
+}
+
+.hikari {
+  background: white;
+  color: black;
+
+  height: 100vh;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.light {
+  color: white;
+}
+
+.dark {
+  color: black;
+}
+
+.continueButton {
+  text-align: right;
+  width: 100%;
+
+  background: transparent;
+  border: none;
+
+  font-size: 1.2em;
+}
+
+.continueButton:hover {
+  font-weight: bolder;
+}
+
+.light-wallpaper {
+  background-image: url("../img/lightside.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.dark-wallpaper {
+  background-image: url("../img/darkside.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

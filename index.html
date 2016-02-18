@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <title>Your Persona</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" async>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css' async>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" async>
+</head>
+
+<body>
+  <div id="main-page" class="container-fluid main-page topPage">
+
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+
+        <header id="first">
+          <div class="header-content">
+            <div class="inner">
+              <div class="mainFade">
+                <h1 id="welcome">Welcome weary traveller</h1>
+              </div>
+
+              <div class="mainFade">
+                <h4 id="intro">May I know, who are you?</h4>
+              </div>
+
+              <br />
+
+              <div class="mainFade">
+                <div class="input-group">
+                  <span class="input-group-addon">Name</span>
+                  <input id="nameInput" type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+
+                <br />
+
+                <div class="input-group">
+                  <span class="input-group-addon">Age</span>
+                  <input id="ageInput" type="number" min=0 max=666 class="form-control" aria-describedby="basic-addon1">
+                </div>
+              </div>
+
+              <br>
+              <div id="prompt" class="mainFade">
+                <h4>Your name and age, please?</h4>
+              </div>
+
+            </div>
+          </div>
+        </header>
+
+        <br />
+        <div id="nextButton" class="mainFade">
+          <button class="continueButton"> Continue <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="greeting" class="container-fluid greeting topPage">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="greetingMessage" class="mainFade"> Welcome </h2>
+        <h4 class="mainFade"> Now, do you prefer the light or the dark ?</h4>
+
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <button id="greetingButton" class="continueButton dark mainFade"> Continue <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="faction" class="container-fluid topPage">
+
+    <div class="row">
+      <div id="hikariFaction" class="col-md-6 hikari">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <h1>Light</h1>
+            <h6><i>ひかり</i></h6>
+
+            <br>
+            <div id="hikariFade" class="mainFade">
+              <h4> Only the truth can set you free</h4>
+              <button id="hikariButton" class="continueButton dark"> I believe in the light <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="yamiFaction" class="col-md-6 yami">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <h1>Dark</h1>
+            <h6><i>やみ</i></h6>
+
+            <br />
+            <div id="yamiFade" class="mainFade">
+              <h4> Absolute power is the only way </h4>
+              <button id="yamiButton" class="continueButton light"> The dark beckons <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="yami" class="container-fluid yami-page topPage">
+    <div class="row">
+      <div class="col-md-2 hikari">
+        <h3 id="nameInfo">Name</h3>
+        <h4 id="ageInfo">Age</h4>
+
+        <p id="strInfo">Str: </p>
+        <p id="intInfo">Int: </p>
+        <p id="agiInfo">Agi: </p>
+        <p id="lckInfo">Lck: </p>
+
+        <br />
+        <br />
+
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <button id="yamiRestartButton" class="continueButton dark mainFade"> Restart <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 yami dark-wallpaper">
+      </div>
+      <footer class="dark">
+        All images used are for illustrative purposes only and are copyright to their respective owners.
+      </footer>
+    </div>
+
+  </div>
+
+  <div id="hikari" class="container-fluid hikari-page topPage">
+    <div class="row">
+      <div class="col-md-10 hikari light-wallpaper">
+      </div>
+
+      <div class="col-md-2 yami">
+        <h3 id="nameInfo">Name</h3>
+        <h4 id="ageInfo">Age</h4>
+
+        <p id="strInfo">Str: </p>
+        <p id="intInfo">Int: </p>
+        <p id="agiInfo">Agi: </p>
+        <p id="lckInfo">Lck: </p>
+
+
+        <br />
+        <br />
+
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <button id="hikariRestartButton" class="continueButton light mainFade"> Restart <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <footer class="dark">
+        All images used are for illustrative purposes only and are copyright to their respective owners.
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
